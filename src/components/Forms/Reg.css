@@ -1,0 +1,27 @@
+.outer-class{
+    margin: 5px 10px;
+}
+.check-radio{
+    margin-top:10px;
+}
+/* .form-control {
+    height: 20px;
+    width : 200px;
+    border-radius:5px;
+    margin-top:5px;
+} */
+.submit-button{
+    margin: 5px 10px;
+    height: 25px;
+    background: blue;
+    color: white;
+    font-weight: bold;
+}
+.text-area{
+    height: 50px;
+    padding:5px;
+    resize: none;
+}
+.file{
+    border:1px solid black;
+}
