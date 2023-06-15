@@ -13,7 +13,7 @@ export default function Field({control,...rest}){
         case 'input':
               return <Input {...rest}/>
         case 'radio':
-            return <Radio  {...rest}/>
+              return <Radio  {...rest}/>
         case 'checkbox':
               return <Checkbox  {...rest}/>
         case 'select':

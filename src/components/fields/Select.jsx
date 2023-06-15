@@ -3,7 +3,7 @@ import React from 'react';
 export default function Select({ options,callback,outerClass, name,label,...rest }) {
     return (
         <div className={outerClass}>
-            <label htmlFor={name}>{`${label} :`}</label><br/>
+            { label ? <> <label htmlFor={name}>{`${label} :`}</label><br/> </>:<span></span>}
             <select onChange={callback.bind(this)}  {...rest} >
                 {
                     options.map((opt) => {

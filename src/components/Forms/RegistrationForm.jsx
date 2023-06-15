@@ -24,7 +24,7 @@ export default function RegistrationForm() {
     }
     return (
         <div>
-            <h3 className='outer-class'>Registration Form</h3>
+            <h3 className='outer-class text-center'>Registration Form</h3>
             <form>
                 <Field
                     control="input"
@@ -95,7 +95,7 @@ export default function RegistrationForm() {
                    control="button"
                    type="submit"
                    label="Submit"
-                   className="form-control submit-button"
+                   className="form-control submit-button bg-primary text-white"
                    />
             </form> 
 

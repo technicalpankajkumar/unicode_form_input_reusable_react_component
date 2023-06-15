@@ -5,7 +5,7 @@ export default function Input(props){
   return (
     <>
     <div className={outerClass}>
-        <label htmlFor={name} >{`${label} :`}</label><br/>  
+    { label ? <><label htmlFor={name} >{`${label} :`}</label><br/> </>:<span></span>}
         <input type={type} name={name} id={name} {...rest}/>
     </div>
     </>
