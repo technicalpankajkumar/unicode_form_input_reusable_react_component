@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{memo} from 'react';
 
-export default function Checkbox({ options,label,outerClass,checkLabelClass,...rest }) {
+export default memo(function Checkbox({ options,label,outerClass,checkLabelClass,...rest }) {
+    console.log("checkbox render")
     return (
         <div className={outerClass}>
             { label ? <><label >{`${label} :`}</label><br /></>:<span></span>}
@@ -15,4 +16,4 @@ export default function Checkbox({ options,label,outerClass,checkLabelClass,...r
 
         </div>
     )
-}   
+}  )

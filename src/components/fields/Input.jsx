@@ -1,7 +1,8 @@
-import react from 'react';
+import React,{memo} from 'react';
 
-export default function Input(props){
-    const {name,label,type,outerClass,...rest} = props;
+export default memo(function Input({name,label,type,outerClass,...rest} ){
+
+    console.log("render input")
   return (
     <>
     <div className={outerClass}>
@@ -10,4 +11,4 @@ export default function Input(props){
     </div>
     </>
   )
-} 
+} )
